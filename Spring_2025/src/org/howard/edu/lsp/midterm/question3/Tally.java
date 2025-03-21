@@ -1,5 +1,7 @@
 package org.howard.edu.lsp.midterm.question3;
-
+/** program to test electronic voting machine class
+ * 
+ */
 public class Tally {
 
 	public static void main(String[] args) {
