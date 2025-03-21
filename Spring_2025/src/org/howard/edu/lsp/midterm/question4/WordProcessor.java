@@ -3,18 +3,30 @@ package org.howard.edu.lsp.midterm.question4;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Wordprocessor finds the longest words in a sentence
+ * 
+ */
+
 public class WordProcessor {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
+	/** constructor for WordProcessor in a sentence
+	 * 
+	 */
     private String sentence; 
 
  
     public WordProcessor(String sentence) {
         this.sentence = sentence;
     }
+    
+    /** finds the longest words in a sentence and if its more than one includes them all
+     * 
+     * @return
+     */
 
     public List<String> findLongestWords() {
         List<String> longestWords = new ArrayList<>();
