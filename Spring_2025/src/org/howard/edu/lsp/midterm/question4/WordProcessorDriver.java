@@ -2,10 +2,17 @@ package org.howard.edu.lsp.midterm.question4;
 
 import java.util.List;
 
+/** tests the WordProcessor class
+ * 
+ */
+
 public class WordProcessorDriver {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/** runs tests with different sentences
+		 * 
+		 */
 		WordProcessor wp1 = new WordProcessor("This is a test with amazing results amazing achievements");
         List<String> longestWords1 = wp1.findLongestWords();
         System.out.println("Test 1 - Longest words: " + longestWords1);
