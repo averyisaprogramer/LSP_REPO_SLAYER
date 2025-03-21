@@ -1,0 +1,15 @@
+Library Class:
+	Responsibilities: Maintaining book collection and adding to book collection
+	Collaborators: Books because each book is actively apart of the library's collection. 
+	
+Book Class:
+	Responsibilities: Availability status method when someone checks it out and State info (title, author, ISBN) of each individual book
+	Collaborators: System and Library because it has to notify the system when someone checks it out and the book is actively apart of the library's collection 
+
+Member Class:
+	Responsibilities: Borrow books and counter for amount books checked out
+	Collaborators: The book class because it has to tell the book class when its no longer available and when it becomes available again. 
+	
+System Class:
+	Responsibilities: Display book's availability and who has it
+	Collaborators: Member and Book classes because the info in the system isn't accurate without their input 
