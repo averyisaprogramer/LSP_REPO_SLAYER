@@ -27,3 +27,4 @@ public class Tally {
 	}
 
 }
+//code retrieved from chat gpt 
