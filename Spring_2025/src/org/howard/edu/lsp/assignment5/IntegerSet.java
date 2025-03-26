@@ -3,6 +3,8 @@ package org.howard.edu.lsp.assignment5;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.NoSuchElementException;
+
 
 public class IntegerSet {
 
@@ -87,3 +89,9 @@ public class IntegerSet {
 		return set.toString();
 	}
 }
+
+/* reference links
+ * https://www.geeksforgeeks.org/arraylist-clear-method-in-java-with-examples/
+ * we3dshools.com 
+ * 
+ * */
