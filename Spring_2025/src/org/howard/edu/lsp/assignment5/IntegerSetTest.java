@@ -1,10 +1,15 @@
 package org.howard.edu.lsp.assignment5;
 
+/**
+ * Tests the IntegerSet class
+ * Calculates intersection, complement, union and difference with two IntegerSet instances
+ * Also assesses smallest and largest and an empty set 
+ */
 public class IntegerSetTest {
 	
 	/** Main class for driver class. Declares two instances of IntegerSet for union, intersection, and other operations 
 	 * 
-	 * @param args
+	 * @param args Command-line arguments (not used in test) 
 	 */
 
 	public static void main(String[] args) {
@@ -50,7 +55,7 @@ public class IntegerSetTest {
 		set1.union(set2);
 		System.out.println("Result of union of Set1 and Set2: " + set1.toString());
 		
-		/** Remakes set1 and set2 for next operation
+		/** Re-makes set1 and set2 for next operation
 		 * 
 		 */
 		
@@ -126,6 +131,10 @@ public class IntegerSetTest {
 
 	}
 	
-	
+
 
 }
+/* Code referenced by https://www.w3schools.com/java/java_ref_arraylist.asp,
+ * chat gpt,
+ * 
+ */

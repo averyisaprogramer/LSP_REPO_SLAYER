@@ -142,7 +142,7 @@ public class IntegerSet {
 		set = complementSet;
 	}
 	
-	/**
+	/** Boolean to see if the set is empty 
 	 * 
 	 * @return
 	 */
@@ -151,7 +151,7 @@ public class IntegerSet {
 		return set.isEmpty();
 	}
 	
-	/**
+	/** Returns the method as a string 
 	 * 
 	 */
 	
@@ -165,4 +165,7 @@ public class IntegerSet {
  * https://www.geeksforgeeks.org/arraylist-clear-method-in-java-with-examples/
  * we3dshools.com 
  * https://medium.com/@AlexanderObregon/javas-objects-equals-method-explained-3a84c963edfa
+ * chat gpt
+ * https://stackoverflow.com/questions/3590677/how-to-do-union-intersect-difference-and-reverse-data-in-java
+ *
  * */
