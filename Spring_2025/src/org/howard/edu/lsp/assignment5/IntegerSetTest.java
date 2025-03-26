@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.assignment5;
 
 /**
- * Tests the IntegerSet class
+ * This is a class that tests the IntegerSet class
  * Calculates intersection, complement, union and difference with two IntegerSet instances
  * Also assesses smallest and largest and an empty set 
  */
