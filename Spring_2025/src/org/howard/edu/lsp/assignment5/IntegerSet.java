@@ -5,16 +5,38 @@ import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/** IntegerSet class represents a set of integers and calculates several operations 
+ * 
+ */
 
 public class IntegerSet {
 
+	/** Main class for IntegerSet
+	 * 
+	 * @param args main class for IntegerSet
+	 */
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	}
+	 
+	/** List that stores integers in a set 
+	 * 
+	 */
+	
 	private List<Integer> set = new ArrayList<Integer>();
+	
+	/**
+	 * Constructor that creates an empty IntegerSet
+	 */
 		
 	public IntegerSet() {
 	}
+	
+	/** Constructor that intializes the IntegerSet with specific list of integers
+	 * 
+	 * @param set the list of integers to initialize the set with.
+	 */
 
 	public IntegerSet(ArrayList<Integer> set) {
 		this.set = set;
@@ -30,7 +52,7 @@ public class IntegerSet {
 	
 	/** returns the length of a set
 	 * 	
-	 * @return
+	 * @return how many elements in the set. 
 	 */
 	
 	public int length() {
@@ -38,7 +60,8 @@ public class IntegerSet {
 	}
 	
 	/** a boolean to compare IntegerSet with the object o. Its true if they have the same elements. False if not
-	 * 
+	 * @param o the object to compare
+	 * @return true if the sets have the same elements. False if not.
 	 */
 	
 	public boolean equals(Object o) {
@@ -50,8 +73,8 @@ public class IntegerSet {
 	
 	/** returns the largest elements in a set. If the set is empty it gives an error that tells the user.
 	 * 
-	 * @return
-	 * @throws NoSuchElementException 
+	 * @return the largest element in set 
+	 * @throws NoSuchElementException for an empty set
 	 */
 	
 	public int largest() {
@@ -60,10 +83,11 @@ public class IntegerSet {
 		}
 		return Collections.max(set);
 	}
-	/** Returns the smallest element in the set. Throws a NoSuchElementException if the set is empty.
-	 * 
-	 * @return
-	 * @throws
+	
+	/** 
+	 * Returns the smallest element in the set. 
+	 * @return the smallest element in the set. 
+	 * @throws NoSuchElementException if the set is empty 
 	 */
 	
 	public int smallest() {
@@ -75,7 +99,7 @@ public class IntegerSet {
 	
 	/** Checks to see if a particular item is already in the set. Adds it in if it's not already in the set. 
 	 * 
-	 * @param item
+	 * @param item the integer to add to the set.
 	 */
 	
 	public void add (int item) {
@@ -86,7 +110,7 @@ public class IntegerSet {
 	
 	/** Removes the value of an item in the set
 	 * 
-	 * @param item
+	 * @param item the integer to remove from the set. 
 	 */
 	
 	public void remove(int item) {
@@ -97,7 +121,7 @@ public class IntegerSet {
 	 * Adds unique elements from IntegerSet into this set 
 	 * Checks to see if a specific item is not in set and adds it in if so.
 	 * 
-	 * @param intSetb
+	 * @param intSetb the IntegerSet to union with. 
 	 */
 	
 	public void union(IntegerSet intSetb) {
@@ -111,7 +135,7 @@ public class IntegerSet {
 	/** Intersection between IntegerSet and intSetb
 	 * After calling this method, the current set will contain only the elements 
 	 * that are present in both the current set and the provided IntegerSet.
-	 * @param intSetb
+	 * @param intSetb the IntegerSet to calculate intersection
 	 */
 	
 	public void intersect(IntegerSet intSetb) {
@@ -120,7 +144,7 @@ public class IntegerSet {
 	
 	/** Set difference operation 
 	 * The current set will have the elements that are unique to it and not in IntegerSet
-	 * @param intSetb
+	 * @param intSetb the IntegerSet to compute the difference with. 
 	 */
 	
 	public void diff(IntegerSet intSetb) {
@@ -129,7 +153,7 @@ public class IntegerSet {
 	
 	/** Set complement 
 	 * Current set has the elements that are in IntegerSet but not current set 
-	 * @param intSetb
+	 * @param intSetb the IntegerSet to calculate complement. 
 	 */
 	
 	public void complement(IntegerSet intSetb) {
@@ -144,15 +168,15 @@ public class IntegerSet {
 	
 	/** Boolean to see if the set is empty 
 	 * 
-	 * @return
+	 * @return true if the set is empty, if not returns false. 
 	 */
 	
 	public boolean isEmpty() {
 		return set.isEmpty();
 	}
 	
-	/** Returns the method as a string 
-	 * 
+	/** 
+	 * @return the method as a string 
 	 */
 	
 	@Override 
