@@ -3,6 +3,7 @@ package org.howard.edu.lsp.assignment6;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
+import java.util.NoSuchElementException;
 
 public class IntegerSetTest {
 
@@ -70,7 +71,7 @@ public class IntegerSetTest {
 		
 		assertEquals(1, set.smallest(), "Smallest value should be 1.");
 		set.clear();
-		assertThrows(NoSuchElementExceptio.class, () -> set.smallest(), "Should throw NoSuchElementException when the set is empty.");
+		assertThrows(NoSuchElementException.class, () -> set.smallest(), "Should throw NoSuchElementException when the set is empty.");
 	}
 	
 	@Test
@@ -116,7 +117,7 @@ public class IntegerSetTest {
 		expectedSet.add(3);
 		
 ;		assertTrue(set1.contains(1), "Set 1 should have 1.");
-		assertTrue(set1,contains(2), "Set 1 should have 2.");
+		assertTrue(set1.contains(2), "Set 1 should have 2.");
 		assertTrue(set1.contains(3), "Set 1 should have 3.");
 		
 		assertEquals(expectedSet.toString(), set1.toString(), "Union operation failed.");
@@ -213,10 +214,10 @@ public class IntegerSetTest {
 	@DisplayName("Test case for isEmpty Method")
 	public void testIsEmpty() {
 		IntegerSet set = new IntegerSet();
-		assertTrue(set.IsEmpty(), "Set should be empty right now.");
+		assertTrue(set.isEmpty(), "Set should be empty right now.");
 		
 		set.add(1);
-		assertFalse(set.isEmpty(), "Set should not be empty because we added 1";)
+		assertFalse(set.isEmpty(), "Set should not be empty because we added 1");
 	}
 	
 	@Test
