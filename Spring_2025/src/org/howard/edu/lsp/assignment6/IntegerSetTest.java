@@ -1,5 +1,9 @@
 package org.howard.edu.lsp.assignment6;
 
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DisplayName;
+
 public class IntegerSetTest {
 
 	public static void main(String[] args) {
