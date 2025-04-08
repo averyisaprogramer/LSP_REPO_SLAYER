@@ -183,6 +183,10 @@ public class IntegerSet {
 	public String toString() {
 		return set.toString();
 	}
+	
+	public boolean contains(int value) {
+		return set.contains(value);
+	}
 }
 
 /* reference links

@@ -116,7 +116,7 @@ public class IntegerSetTest {
 		expectedSet.add(2);
 		expectedSet.add(3);
 		
-;		assertTrue(set1.contains(1), "Set 1 should have 1.");
+		assertTrue(set1.contains(1), "Set 1 should have 1.");
 		assertTrue(set1.contains(2), "Set 1 should have 2.");
 		assertTrue(set1.contains(3), "Set 1 should have 3.");
 		
@@ -169,8 +169,8 @@ public class IntegerSetTest {
 		set1.diff(set2);
 		
 		assertTrue(set1.contains(1), "Set 1 should have 1 in it.");
+		assertTrue(set2.contains(2), "Set 1 should have 2 in it.");
 		
-		assertFalse(set2.contains(2), "Set 1 should have 2 in it.");
 		assertFalse(set1.contains(3), "Set 1 should not have 3 in it");
 		assertFalse(set1.contains(4), "Set 1 should not have 4 in it after difference.");
 		
@@ -223,9 +223,13 @@ public class IntegerSetTest {
 	@Test
 	@DisplayName("Test case for toString method")
 	public void testToString() {
-		IntegerSet set = new IntegerSet();
-		set.add(1);
-		set.add(2);
-		assertEquals("[1, 2] ", set.toString(), "String representation of the set shoul dbe [1, 2].");
+		IntegerSet set1 = new IntegerSet();
+		set1.add(1);
+		set1.add(2);
+		assertEquals("[1, 2]", set1.toString(), "toString() should return the correct string representation.");
 	}
 }
+
+
+/* code sources from chat gpt, geeksforgeeks, and stackoverflow
+ */
