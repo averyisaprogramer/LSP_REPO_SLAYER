@@ -1,10 +1,12 @@
 package org.howard.edu.lspfinal.question2;
 
-public class TaskNotFoundException {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+/**
+ * Exception thrown when a task is not found in the TaskManager.
+ */
+public class TaskNotFoundException extends Exception {
+    public TaskNotFoundException(String message) {
+        super(message);
+    }
 }
+/* code sourced from chat gpt
+ */
