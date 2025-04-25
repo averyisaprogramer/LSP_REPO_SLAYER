@@ -37,6 +37,16 @@ public class ShoppingCart {
         }
         items.remove(itemName);
     }
+    
+
+    /**
+     * Returns the number of items currently in the cart.
+     * 
+     * @return the number of items in the cart
+     */
+    public int getItemCount() {
+        return items.size();
+    }
 
     /**
      * Calculates and returns the total cost of the cart,
