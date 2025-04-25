@@ -96,4 +96,5 @@ public class ShoppingCart {
         return discountPercentage;
     }
 }
-
+/* code for remove and other method sourced from chat gpt
+ */
