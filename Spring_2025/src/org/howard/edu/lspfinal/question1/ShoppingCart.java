@@ -24,6 +24,19 @@ public class ShoppingCart {
         }
         items.put(itemName, price);
     }
+    
+    /**
+     * Removes an item from the shopping cart.
+     * 
+     * @param itemName  the name of the item to be removed
+     * @throws IllegalArgumentException if the item does not exist
+     */
+    public void removeItem(String itemName) {
+        if (!items.containsKey(itemName)) {
+            throw new IllegalArgumentException("Item '" + itemName + "' does not exist in the cart.");
+        }
+        items.remove(itemName);
+    }
 
     /**
      * Calculates and returns the total cost of the cart,
