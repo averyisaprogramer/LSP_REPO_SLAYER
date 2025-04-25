@@ -35,7 +35,7 @@ public class ShoppingCartTest {
 	}
 	
 	@Test
-	@DisolayName("Test adding item with negative price (except exception")
+	@DisplayName("Test adding item with negative price (except exception")
 	void testAddNegativePrice() {
 		assertThrows(IllegalArgumentException.class, () -> cart.addItem("BadItem", -5.0));
 	}
@@ -95,9 +95,21 @@ public class ShoppingCartTest {
 	
 	@Test
 	@DisplayName("Test removing a non-existent item")
-	void testRemoveNonExistentItem() {
-		cart.addItem("Apple", 10.0);
-		cart.removeItem("Banana");
-		assertEquals(1, cart.getItemCount());
+	public void testRemoveNonExistentItem() {
+	    ShoppingCart cart = new ShoppingCart();
+	    
+	    // Try removing an item that doesn't exist
+	    IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
+	        cart.removeItem("NonExistentItem");
+	    });
+	    
+	    // Verify the exception message
+	    assertEquals("Item 'NonExistentItem' does not exist in the cart.", exception.getMessage());
 	}
+
 }
+
+/* code taken from chat gpt and 
+ * https://stackoverflow.com/questions/27446136/unordered-execution-of-tests-in-junit-for-shoppingcart 
+ */
+
