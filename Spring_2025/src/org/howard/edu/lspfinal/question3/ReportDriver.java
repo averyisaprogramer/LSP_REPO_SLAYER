@@ -16,7 +16,7 @@ public class ReportDriver {
         System.out.println("Generating Inventory Report:");
         inventoryReport.generateReport();  // Template method in action
     }
-}
+
 
 /* code sourced from chat gpt
  */
