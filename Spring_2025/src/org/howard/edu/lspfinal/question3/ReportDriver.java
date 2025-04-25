@@ -3,6 +3,7 @@ package org.howard.edu.lspfinal.question3;
 /**
  * Driver class to demonstrate report generation.
  */
+
 public class ReportDriver {
     public static void main(String[] args) {
         // Create and generate a Sales Report
@@ -16,9 +17,9 @@ public class ReportDriver {
         System.out.println("Generating Inventory Report:");
         inventoryReport.generateReport();  // Template method in action
     }
-
+}
 
 /* code sourced from chat gpt
  */
- */
+ 
 
